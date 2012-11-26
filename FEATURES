@@ -1,0 +1,25 @@
+Features yet to be implemented:
+
+* Start at user-defined level!
+* Pre-existing rubble (variable lines, variable density)
+* Images for tiles
+* Background images?
+* Game logs facilitating replays.
+	- mark whether game aborted or lost
+* Internalize key repeat delay and repeat rate
+* Rewrite GravityThread and TimerThread using TimerTask?
+	<http://java.sun.com/docs/books/tutorial/essential/threads/timer.html>
+* Ultra and Sprint game modes
+* Global totals: total time played, time spent, lines cleared, etc.
+	- make note of when log started
+
+* Consider: clearing all but top 5 scores, or "recent scores" list, or both
+
+Far off in the future...
+
+* Battle mode (2 people at the same keyboard)
+
+Even farther...
+
+* Networked multiplayer
+

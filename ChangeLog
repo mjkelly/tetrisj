@@ -1,0 +1,79 @@
+2006-05-14 Michael Kelly <michael AT michaelkelly DOT org>
+	* README: Tweaked README formatting.
+	* ChangeLog: Renamed CHANGELOG to ChangeLog, made formatting GNUish.
+	Released version 1.0.4-r1.
+
+2006-05-14 Lee Thoong Ching <pakkua80 AT yahoo DOT com>
+	* Tile.java (drawTile): use fill3DRect() instead of doing 3D effect
+	manually.
+
+2005-05-04 Michael Kelly <michael AT michaelkelly.org>
+	* CHANGELOG: reversed the order of entries, so the latest changes are
+	on the top now.
+	Added "Grid" option in preferences.
+	Fixed next-piece bug reported by Alex.
+	Released version 1.0.4.
+
+2005-03-13 Michael Kelly <michael AT michaelkelly.org>
+	Put everything into the 'TetrisJ' package. Modified Makefile and
+	Manifest accordingly.
+	Added some Javadoc comments.
+	Released version 1.0.3b-r1.
+
+2005-01-16 Michael Kelly <michael AT michaelkelly.org>
+	When a high score is obtained, it is highlighted in red when the high scores
+	window is automatically displayed. Looks like the threading bugs may have been
+	resolved (yay!). Bumped the version up to beta, since it's been stable for a
+	while (relative to a few weeks ago; though this is more due to school starting
+	than me running out of features to implement).
+	Released version 1.0.3b.
+
+2005-01-09 Michael Kelly <michael AT michaelkelly.org>
+	Clicking "cancel" at the high score prompt screen now doesn't add your
+	score to the list (instead of adding "Anonymous"), and doesn't display
+	the high score list.
+	Released version 1.0.2a6.
+
+2005-01-05 Michael Kelly <michael AT michaelkelly.org>
+	There were three outstanding bugs ("gravity" turns off, but pieces can
+	still be moved; complete freeze; and spurious endgame and/or "ghost"
+	pieces). I completely re-did the synchronization scheme. It should
+	work now. How many of the bugs this fixes remains to be seen (all, I
+	hope).
+	Released version 1.0.2a5.
+
+2005-01-02 Michael Kelly <michael AT michaelkelly.org>
+	Fixed timekeeping bug reported by Alex.
+	Released version 1.0.2a4.
+
+2005-01-02 Michael Kelly <michael AT michaelkelly DOT org>
+	More debugging. I suspect there's a threading bug. Unfortunately, only
+	Alex can reproduce it.
+	Released version 1.0.2a3.
+
+2005-01-01 Michael Kelly <michael@michaelkelly DOT org>
+	Added debugging stuff.
+	Released version 1.0.2a2.
+
+2005-01-01 Michael Kelly <michael AT michaelkelly DOT org>
+	Fixed possible errors with pieces falling twice as fast as they
+	should. More scoring changes! Added 5 point bonus per piece landed.
+	Dropping pieces only gives you 1 point per square instead of 10.
+	Average score plunges. Softened speed progression at higher levels.
+	Released version 1.0.2a1.
+
+2005-01-01 Michael Kelly <michael AT michaelkelly DOT org>
+	Added 5 point bonus for every piece frozen. More HighScoreWindow
+	tweaks. Fixed bug involving selecting "new game" during a running game
+	by simply disallowing it. Happy new year.
+	Released version 1.0.2a.
+
+2004-12-31 Michael Kelly <michael AT michaelkelly DOT org>
+	Added "clear high scores" button to prefs dialog.
+	Tweaks to HighScoreWindow.
+	Released version 1.0.1a.
+
+2004-12-29 (?) Michael Kelly <michael AT michaelkelly DOT org>
+	Preliminary features complete.
+	I christen thee version 1.0.0a.
+

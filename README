@@ -1,0 +1,114 @@
+TetrisJ
+*******
+
+Yet another Tetris clone, written in Java, by Michael Kelly
+(michael@michaelkelly.org). Released under the GNU GPL. See file 'COPYING' for
+the full license.
+
+TABLE OF CONTENTS
+=================
+
+1. Compiling
+2. Running the Program 
+3. About
+4. Why?
+5. Thanks
+6. Contact
+
+1. COMPILING
+============
+
+If you have the source code, follow these directions. If you have the .jar,
+skip directly to 'RUNNING THE PROGRAM'.
+
+(Short version)
+$ make
+$ java -jar TetrisJ.jar
+
+(Long version)
+There's a rudimentary Makefile. Just cd into the source directory (which should
+be the directory this file's in) and type 'make'. If you make changes and want
+to recompile the whole thing, hit 'make clean' (this deletes all the .class
+files) before running 'make' again (or just do 'make new' to automatically run
+'make clean' and 'make'). The makefile is very stupid... it's mostly just a
+shortcut for running javac and jar, it doesn't handle dependencies well/at all.
+
+After 'make', you will have a bunch of .class files (which you can kill, if you
+want; 'make classclean'), and TetrisJ.jar.
+
+2. RUNNING THE PROGRAM
+======================
+
+To run it, type the following on the command line ('$' is the prompt):
+$ java -jar TetrisJ.jar
+
+In OS X and WinXP you should be able to double-click it. (The program doesn't
+work at all in OS 9, because there's no Swing implementation.)
+
+There may be other OS-specific ways for you to run it from a command-line or
+GUI.
+
+If you downloaded the source, you can type 'make run' to run the program, as
+well.
+
+3. ABOUT
+========
+
+This is yet another implementation of Tetris. If you don't know how to play
+Tetris yet, here's the premise and the goals:
+
+Pieces fall from the top of the screen to the bottom. You can move them left
+and right, rotate them, and drop them immediately to the bottom. Your goal is
+to drop pieces so they completely fill a row (color doesn't matter). When this
+happens, the row disappears, and all rows above it shift down.
+
+You get more points for clearing more rows at a time, and a few points for
+every square you drop a piece (as opposed to waiting for it to fall of its own
+accord).
+
+There is a preview window which shows you the piece that will drop next. You
+can turn it off for a 15% score bonus.
+
+This implementation is released under the GNU GPL. See the 'COPYING' file for
+the full text of the license.
+
+4. WHY?
+=======
+
+Why did I write yet another Tetris clone? Because I couldn't find any existing
+ones I liked on Linux. Some were pretty, but lacked a good high-scores feature,
+some weren't so pretty, some had massive feature bloat, and one came with an
+attached text editor. ;) So, I wrote this.
+
+I was also inspired by the Shaw Household Tetris Rules:
+<http://www.dougshaw.com/tetris/>, because I hadn't come across any games that
+implemented the Ultra and Sprint modes. (They still aren't implemented in this
+game, but they will be, someday. I promise. Really.)
+
+5. THANKS
+=========
+
+My dad, for introducing me to the game and testing this version.
+
+Alex Dodge, for finding bugs and suggesting features.
+
+Tetris Max, <http://members.chello.at/theodor.lauppert/games/tetris_max.htm>,
+For being a great implementation of Tetris, and my first real introduction to
+the game. Moo.
+
+Gnometris, for having a nice clean interface for me to shamelessly copy.
+
+JTris, <http://jtris.sourceforge.net>, for making me realize I had to change
+the name. (And for being a reference for getting KeyEvents working.)
+
+People who write open source code everywhere, for writing so many of the tools
+I use every day.
+
+6. CONTACT
+==========
+
+Michael Kelly
+Email: michael@michaelkelly.org
+Web:   http://www.michaelkelly.org
+
+Feel free to email me with any questions, comments, or suggestions.
